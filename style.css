@@ -1,0 +1,111 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: Lato, sans-serif;
+}
+
+/* Video responsive setup from css tricks */
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* --------------------------------------- */
+
+.container{
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.segment{
+	padding: 20px;
+	margin: 20px;
+	
+	border-radius: 5px;
+	-webkit-box-shadow: 0px 0px 12px 6px rgba(0,0,0,0.14);
+	-moz-box-shadow: 0px 0px 12px 6px rgba(0,0,0,0.14);
+	box-shadow: 0px 0px 12px 6px rgba(0,0,0,0.14);
+}
+
+.button{
+	cursor: pointer;
+	background-color: rgb(108, 177, 108);
+	padding: 20px;
+	margin: 0 20px;
+	border-radius: 5px;
+	text-align: center;
+	color: rgb(255, 255, 255);
+	-webkit-box-shadow: 0px 0px 12px 6px rgba(0,0,0,0.14);
+	-moz-box-shadow: 0px 0px 12px 6px rgba(0,0,0,0.14);
+	box-shadow: 0px 0px 12px 6px rgba(0,0,0,0.14);
+}
+.button:hover{
+	background-color: rgb(96, 156, 96);
+}
+
+.imgCard{
+	display: flex;
+}
+
+.imgCard > div{
+	flex: 1;
+	text-align: center;
+}
+h3{
+	margin-bottom: 10px;
+}
+
+ul li{
+	margin: 5px;
+	list-style-type: none;
+}
+
+@media(max-width: 750px){
+	.imgCard{
+		flex-direction: column;
+	}
+	.segment{
+		padding: 10px;
+		margin: 10px;
+	}
+	.button{
+		padding: 20px;
+		margin: 10px 10px;
+	}
+	.description{
+		margin-bottom: 20px;
+		margin-top: 10px !important;
+	}
+	div.img.segment{
+		margin-right: 10px;
+	}	
+}
+
+.description.segment{
+	margin-top: 0;
+}
+
+.img.segment{
+	margin-right: 5px;
+}
+
+.img h3{
+	margin-bottom: 10px;
+}
+
+.ingredients{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
